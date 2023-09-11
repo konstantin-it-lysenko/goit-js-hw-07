@@ -29,9 +29,7 @@ function openTargetImgModal(e) {
   const imgDescription = currentImg.alt;
 
   const instance = basicLightbox.create(`
-  <div class="modal">
   <img src="${imgDataset}" alt="${imgDescription}"/>
-  </div>
   `, { onClose: () => { document.removeEventListener('keydown', onEscKeydown); } })
 
   instance.show();
